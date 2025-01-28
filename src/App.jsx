@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-      <section className='grid p- grid-cols-4 gap-4'>
-        <div className='col-span-1 border-r text-center border-gray-200 h-full py-6 px-2'>
+      <section className='lg:grid p-2 grid-cols-4 gap-4'>
+        <div className='lg:col-span-1 border-r text-center border-gray-200 h-full py-6 px-2'>
           <section id='information'>
             <PersonalInfo />
           </section>
@@ -19,7 +19,7 @@ function App() {
             <Skills />
           </section>
         </div>
-        <div className="col-span-3 p-6">
+        <div className="lg:col-span-3 p-6">
           <section className='about my-4'>
             <About />
           </section>

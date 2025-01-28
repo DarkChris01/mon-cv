@@ -12,7 +12,7 @@ export default function Experience() {
                     </span>
                 </div>
                 <p>
-                    Freelance , Doula CAMEROUN
+                    Freelance , Douala CAMEROUN
                 </p>
 
 
