@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <section className='grid lg:grid-cols-4 grid-cols-1 lg:gap-2'>
-        <div className='lg:col-span-1 lg:border-r h-screen lg:h-fit text-center border-gray-200  py-6 px-2'>
+        <div className='lg:col-span-1 lg:border-r  text-center border-gray-200  py-6 px-2'>
           <section id='information'>
             <PersonalInfo />
           </section>

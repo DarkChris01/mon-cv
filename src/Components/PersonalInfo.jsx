@@ -5,7 +5,7 @@ const PersonalInfo = () => {
   return (
     <section className="font-semibold">
       <div className="mb-3 flex justify-center w-full">
-        <img src={picture} alt="Profile" className="lg:w-full w-42 rounded-full border border-indigo-100/60 shadow" />
+        <img src={picture} alt="Profile" className="lg:w-1/2 w-42 rounded-full border border-indigo-100/60 shadow" />
       </div>
       <div className="px-2 text-lg font-bold">
         <h4>Bapes Yop Christian Oscar</h4>

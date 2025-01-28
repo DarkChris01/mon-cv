@@ -7,7 +7,7 @@ export default function ProgressBar({ skill }) {
     useEffect(() => {
         function animation() {
             if (level < skill.level) {
-                setLevel(level + 2)
+                setLevel(level + 1)
                 progressBarAnimation = requestAnimationFrame(animation)
             }
         }
