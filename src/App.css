@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-
-body{
-    font-weight: 500;
-}
 /* Style général pour la balise progress */
 progress {
     border: 1px solid #ccc;
