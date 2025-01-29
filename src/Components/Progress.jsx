@@ -27,12 +27,12 @@ export default function ProgressBar({ skill }) {
 
     return (
         <>
-        {/* <div className="w-full bg-gray-200 rounded-full overflow-hidden h-6">
+        <div className="w-full bg-gray-200 rounded overflow-hidden h-6">
             <div
                 className="h-full bg-blue-500 transition-all duration-75"
                 style={{ width: `${progress}%` }}
             />
-        </div> */}
-            <progress className="border rounded-full overflow-hidden bg-gray-200 w-full h-5" value={progress} max="100">{progress}%</progress>
+        </div>
+            {/* <progress className="border rounded-full overflow-hidden bg-gray-200 w-full h-5" value={progress} max="100">{progress}%</progress> */}
         </>)
 }
