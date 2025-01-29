@@ -9,17 +9,18 @@ export default function ProgressBar({ skill }) {
         let progressBarAnimation;
 
         function animation() {
-
             setProgress(prev => {
-                if (prev < skill.level+1) {
+                if (prev < skill.level + 1) {
                     progressBarAnimation = requestAnimationFrame(animation)
-                    return Math.min(prev + 6, skill.level+1); // Augmente en limitant à `skill.level`
+                    return Math.min(prev + 1, skill.level + 1); // Augmente en limitant à `skill.level`
                 }
                 cancelAnimationFrame(progressBarAnimation);
                 return prev
             })
         }
-        animation();
+        setTimeout(() => {
+            animation();
+        }, 500);
 
         return () => cancelAnimationFrame(progressBarAnimation);
     }, [skill])
@@ -27,12 +28,12 @@ export default function ProgressBar({ skill }) {
 
     return (
         <>
-        <div className="w-full bg-gray-200 rounded overflow-hidden h-6">
-            <div
-                className="h-full bg-blue-500 transition-all duration-75"
-                style={{ width: `${progress}%` }}
-            />
-        </div>
+            <div className="w-full bg-gray-200 rounded overflow-hidden h-6">
+                <div
+                    className="h-full bg-blue-500 transition-all duration-75"
+                    style={{ width: `${progress}%` }}
+                />
+            </div>
             {/* <progress className="border rounded-full overflow-hidden bg-gray-200 w-full h-5" value={progress} max="100">{progress}%</progress> */}
         </>)
 }
